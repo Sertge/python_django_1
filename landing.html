@@ -16,7 +16,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <h2>Sign up for our launch (which actually won't exist)</h2>
-    <form class="form-group" action="thankyou.html" method="get">
+    <form  action="thankyou.html" method="get">
       <label for="first">First name:</label>
       <br>
       <input type="text" name="first" value="">
@@ -29,6 +29,43 @@
       <br>
       <input type="email" name="email" value="">
       <small class='form-text text-muted'>Here's some small text</small>
+      <br>
+      <div class="form-group">
+        <label for="age-selector">Please tell us your age</label>
+        <select class="form-control"  name="age-selector">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="likes-selector">Which topics you enjoy reading?</label>
+        <select multiple class="form-control"  name="likes-selector">
+          <option value="1">Action</option>
+          <option value="2">Drama</option>
+          <option value="3">Comedy</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <label for="radio-button-sel">
+            <input type="radio" name="option-radio" value="option1">
+            This is the first radio option
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="option-radio">
+            <input type="radio" name="option-radio" value="option2">
+            This is the second radio option
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <label for="option-radio">
+            <input type="radio" name="option-radio" value="option3" disabled>
+            This option is disabled
+          </label>
+        </div>
+      </div>
       <br>
       <input class='btn btn-success btn-lg' id='sub' type="submit" name="Sign me up" value="Sign up">
 
