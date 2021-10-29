@@ -1,0 +1,16 @@
+#Create the environment
+conda create --name [envName] django
+
+#Activate the new environment
+conda activate [envName]
+
+#Inside activated environment:
+#create new project
+django-admin startproject [projectName]
+
+#Run server
+python manage.py runserver
+
+#Create application
+python manage.py startapp first
+_app
