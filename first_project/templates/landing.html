@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="master.css"> -->
+    <title>This is the project solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Welcome to the Landing Page!</h1>
+    <h1>We'll start up from here!</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Sign up for our launch (which actually won't exist)</h2>
+    <form  action="thankyou.html" method="get">
+      <label for="first">First name:</label>
+      <br>
+      <input type="text" name="first" value="">
+      <br>
+      <label for="last">Last name:</label>
+      <br>
+      <input type="text" name="last" value="">
+      <br>
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" name="email" value="">
+      <small class='form-text text-muted'>Here's some small text</small>
+      <br>
+      <div class="form-group">
+        <label for="age-selector">Please tell us your age</label>
+        <select class="form-control"  name="age-selector">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="likes-selector">Which topics you enjoy reading?</label>
+        <select multiple class="form-control"  name="likes-selector">
+          <option value="1">Action</option>
+          <option value="2">Drama</option>
+          <option value="3">Comedy</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <label for="radio-button-sel">
+            <input type="radio" name="option-radio" value="option1">
+            This is the first radio option
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="option-radio">
+            <input type="radio" name="option-radio" value="option2">
+            This is the second radio option
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <label for="option-radio">
+            <input type="radio" name="option-radio" value="option3" disabled>
+            This option is disabled
+          </label>
+        </div>
+      </div>
+      <br>
+      <input class='btn btn-success btn-lg' id='sub' type="submit" name="Sign me up" value="Sign up">
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
